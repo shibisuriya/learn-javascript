@@ -43,7 +43,10 @@ console.log(abc);
 
 // default values
 // Default values can be more complex expressions or even function calls.
-let [name = "Guest", surname = "Anonymous"] = ["Julius"];
+const getName = () => {
+  return prompt("Enter your name son!");
+};
+let [name = getName(), surname = "Anonymous"] = ["Julius"];
 console.log(`name -> ${name}, surname -> ${surname}`);
 
 console.clear();
