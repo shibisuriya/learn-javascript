@@ -4,7 +4,8 @@ const [firstName, , lastName] = "shibi lazy suriya".split(" "); // Avoiding the 
 console.log(firstName);
 console.log(lastName);
 
-// Array destructuring works with any iterable on the right-side.
+// Array destructuring works with any iterable on the right-side. That is any variable that can be looped using a for of loop
+// can be destructured.
 const [firstLetter, , secondLetter] = "abc";
 console.log(firstLetter, secondLetter);
 
@@ -43,7 +44,6 @@ console.log(abc);
 // default values
 // Default values can be more complex expressions or even function calls.
 let [name = "Guest", surname = "Anonymous"] = ["Julius"];
-console.log(name);
-console.log(surname);
+console.log(`name -> ${name}, surname -> ${surname}`);
 
 console.clear();
