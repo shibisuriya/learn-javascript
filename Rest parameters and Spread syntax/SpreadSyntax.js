@@ -72,7 +72,7 @@ console.clear();
 // const arrayObj = Array.from(obj)
 
 // But note that Array.from() can work with `array - likes` and iterables, but `...` works with only iterables, so this
-// won't work... 
+// won't work...
 // const arrayObj = [...obj]
 // Note that an `Array-like` object may or may not be an iterable.
 // An iterable may or may not be an array.
@@ -85,12 +85,13 @@ console.clear();
 // }
 // Note that obj is just a regular object and not an iterable, and we can't use the ... operator on an non-iterable!
 
-// const newObj = [...obj];  // Will generate an error since we are trying to iterate over an non iterable! 
+// const newObj = [...obj];  // Will generate an error since we are trying to iterate over an non iterable!
 // And this obiviously doesn't make sense since we are trying to spread a key-value pair into an array. But the error
-// thrown is `can't iterator over a non-iterable`!
+// thrown is `can't iterator over a non-iterable`! Note, If `obj` was an array,
+// using the ... spread operator shall return values present inside of the array as arguments to the array initializer - [].
 
-// But somehow this is normal in js, being able spread a non-iterable inside '{}'!!!! 
-// const newObj = {...obj} 
+// But somehow this is normal in js, being able spread a non-iterable inside '{}'!!!!
+// const newObj = {...obj}
 
 // Two modes of ... spread operator:
 // 1) Spreading an iterator.
